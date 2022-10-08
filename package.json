@@ -1,0 +1,36 @@
+{
+  "name": "pkg-name",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.13.2",
+  "description": "TODO: description",
+  "author": "Yu Le <is.yuler@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/yuler/pkg-name#readme",
+  "repository": "yuler/pkg-name",
+  "bugs": "https://github.com/yuler/pkg-name/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "unbuild": "^0.8.11",
+    "vitest": "^0.24.0"
+  }
+}
